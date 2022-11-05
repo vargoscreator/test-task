@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@font-face {
+    font-family: "Avenir Next";
+    src: url("/fonts/AvenirNextBold.woff2") format("woff2");
+}
+
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1A1A1A;
+}
+.container{
+    max-width: 1258px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.contact{
+    height: 100vh;
+}
+.contact__inner{
+    padding: 150px 0;
+    position: relative;
+}
+
+.contact__inner::before{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 851px;
+    height: 788px;
+    left: -870px;
+    top: -624px;
+    background: linear-gradient(90deg, #B79891 0%, #94716B 100%);
+    opacity: 0.2;
+    filter: blur(250px);
+    z-index: 1;
+}
+.contact__inner::after{
+    content: '';
+    position: absolute;
+    background-color: red;
+    width: 851px;
+    height: 788px;
+    left: -370px;
+    top: 961px;
+    background: linear-gradient(90deg, #6F8488 0%, #6F8488 100%);
+    opacity: 0.2;
+    filter: blur(250px);
+    z-index: 1;
+}
+.contact__left-form{
+    position: relative;
+    grid-area: contact__left-form;
+    z-index: 10;
+}
+.contact__right-form{
+    position: relative;
+    grid-area: contact__right-form;
+    z-index: 10;
+}
+.contact__title{
+    position: relative;
+    font-family: 'Avenir Next';
+    font-weight: 700;
+    font-size: 32px;
+    margin-bottom: 13px;
+}
+.contact__descr{
+    position: relative;
+    font-family: 'Inter';
+    margin-bottom: 35px;
+}
+.contact__form{
+    display: grid;
+    grid-template-rows: 64px 64px 64px 64px;
+    grid-template-columns: auto;
+    grid-gap: 32px;
+    margin: 0;
+    max-width: 630px;
+}
+input, select, textarea{
+    border: 1px solid #fff;
+    background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+    border-radius: 8px;
+    padding: 18px 19px;
+}
+input:focus, select:focus, textarea:focus{
+    outline: none;
+    border: 1px solid #1A1A1A;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input::placeholder, textarea::placeholder, option{
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #414042;
+    opacity: 0.5;
+}
+
+.form__send{
+    background-color: #1A1A1A;
+    border-radius: 10px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;  
+    cursor: pointer;
+    border: 2px solid #1A1A1A;
+    transition: all 0.2s;
+}
+.form__send:hover{
+    background-color: inherit;
+    color: #1A1A1A;
+}
+.form__message{
+    max-width: 630px;
+	min-width: 100%;
+    min-height: 66px;
+    max-height: 500px;
+    grid-column: 1 / 3;
+}
+.form__select {
+	position: relative;
+	width: 100%;
+}
+.form__select.active .form__select-body {
+	display: block;
+}
+.form__select-header {
+	background: #FFFFFF;
+    box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
+    border-radius: 8px;
+	cursor: pointer;
+	display: flex;
+    align-items: center;
+    position: relative;
+    color: #414042;
+}
+.form__select-header::after{
+    content: '';
+    position: absolute;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    right: 20px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    opacity: 0.6;
+}
+.form__select.active .form__select-header::after{
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    bottom: 20px;
+}
+.form__select-current {
+	font-size: 18px;
+	line-height: 24px;
+    padding: 18px 19px;
+    opacity: 0.5;
+}
+.form__select-body {
+	border: 1px solid #cccccc;
+	border-top: 0;
+	display: none;
+    background-color: #fff;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 100%;
+    z-index: 20;
+}
+.form__select-item {
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 24px;
+	padding: 8px;
+}
+
+.form__select-item:hover {
+	background-color: #f2f2f2;
+}
+
+.form__select-typeof{
+    grid-column: 1 / 3;
+}
