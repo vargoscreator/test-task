@@ -31,6 +31,9 @@ body{
 .contact__inner{
     padding: 150px 0;
     position: relative;
+    display: grid;
+    grid-template-areas: 'contact__left-form contact__right-form';
+    justify-content: space-around;
 }
 
 .contact__inner::before{
@@ -95,6 +98,7 @@ input, select, textarea{
     box-shadow: 0px 16px 32px rgba(202, 203, 210, 0.25);
     border-radius: 8px;
     padding: 18px 19px;
+    width: 299px;
 }
 input:focus, select:focus, textarea:focus{
     outline: none;
@@ -181,14 +185,14 @@ input::placeholder, textarea::placeholder, option{
     opacity: 0.5;
 }
 .form__select-body {
-	border: 1px solid #cccccc;
+    position: absolute;
 	border-top: 0;
 	display: none;
     background-color: #fff;
 	left: 0;
 	position: absolute;
 	right: 0;
-	top: 100%;
+	top: 90%;
     z-index: 20;
 }
 .form__select-item {
@@ -204,4 +208,53 @@ input::placeholder, textarea::placeholder, option{
 
 .form__select.typeof{
     grid-column: 1 / 3;
+}
+
+
+#map{
+    position: relative;
+    width: 470px;
+    height: 736px;
+    z-index: 10;
+    bottom: 105px;
+}
+.gm-style-cc{
+    display: none;
+}
+#map > div > div > div:nth-child(15n){
+    display: none;
+}
+.map__container{
+    max-width: 244px;
+    padding: 8px 20px 20px 8px;
+}
+.map__title{
+    font-family: 'Inter';
+    font-weight: 700;
+    color: #1A1A1A;
+}
+.map__content{
+    font-size: 18px;
+    line-height: 30px;
+    color: #1A1A1A;
+}
+.map__content-item{
+    display: grid;
+    grid-template-columns: 35px auto;
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.map__content-item img{
+    width: 23px;
+    height: 23px;
+}
+.map__content-descr{
+    font-size: 18px;
+    line-height: 22px;
+    color: #858585;
+}
+.gm-style-iw + div{
+    display: none;
 }
