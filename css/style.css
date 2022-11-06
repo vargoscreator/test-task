@@ -146,7 +146,7 @@ input::placeholder, textarea::placeholder, option{
 	position: relative;
 	width: 100%;
 }
-.form__select.border{
+.form__select.error{
     border: 1px solid red;
     border-radius: 8px;
 }

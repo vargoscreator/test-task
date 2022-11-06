@@ -15,8 +15,8 @@
                     <div class="contact__title">Contact Us</div>
                     <div class="contact__descr">The Voodoo team is looking forward to hearing from you!</div>
                     <form class="contact__form" id="contact__form">
-                        <input class="form__full-name" type="text" placeholder="Full Name" required>
-                        <input class="form__title" type="text" placeholder="Title/Position" required>
+                        <input class="form__full-name" type="text" placeholder="Full Name" name="name" required>
+                        <input class="form__title" type="text" placeholder="Title/Position" name="title" required>
                         <div class="form__select">
                             <div class="form__select-header">
                                 <span class="form__select-current">Practice / Institution</span>
@@ -30,8 +30,8 @@
                                 <div class="form__select-item">Option 5</div>
                             </div>
                         </div>
-                        <input class="form__email" type="email" placeholder="Email Address" required>
-                        <input class="form__number" type="number" placeholder="Phone Number" required>
+                        <input class="form__email" type="email" placeholder="Email Address" name="email" required>
+                        <input class="form__number" type="number" placeholder="Phone Number" name="phone" required>
                         <div class="form__select">
                             <div class="form__select-header">
                                 <span class="form__select-current">Medical Profession</span>
@@ -58,7 +58,7 @@
                                 <div class="form__select-item">Option 5</div>
                             </div>
                         </div>
-                        <textarea class="form__message" cols="30" rows="10" placeholder="Enter Message*" required></textarea>
+                        <textarea class="form__message" cols="30" rows="10" placeholder="Enter Message*" name="message" required></textarea>
                         
                         <input class="form__send" type="submit" value="Send Message">
                     </form>

@@ -95,15 +95,31 @@ document.getElementById('contact__form').addEventListener('submit', function (e)
     const form__selectCurrent = document.getElementsByClassName('form__select-current');
     const form__select = document.getElementsByClassName('form__select');
     for (let i = 0; i < form__selectCurrent.length; i++) {
-        form__select[i].classList.remove('border');
+        form__select[i].classList.remove('error');
         const selectItem = form__selectCurrent[i].innerText;
-        if(selectItem === 'Practice / Institution' || selectItem === 'Medical Profession' || selectItem === 'Type of Inquiry'){
-            form__select[i].classList.add('border');
+        if(selectItem == 'Practice / Institution' || selectItem === 'Medical Profession' || selectItem === 'Type of Inquiry'){
+            form__select[i].classList.add('error');
             break;
         }
-        console.log(321)
+
         array.push(selectItem);
         console.log(array[i])
     }
+    const name = this.name.value;
+    const title = this.title.value;
+    const email = this.email.value;
+    const phone = this.phone.value;
+    const message = this.message.value;
 
+    /* Виводимо повідомлення в консоль для перевірки */
+    console.log(name)
+    console.log(title)
+    console.log(email)
+    console.log(phone)
+    console.log(message)
+    console.log(array[0])
+    console.log(array[1])
+    console.log(array[2])
+
+    e.target.reset(); 
 })
