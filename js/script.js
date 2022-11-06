@@ -87,11 +87,23 @@ marker.addListener("click", () => {
     infoWindow.open(map, marker);
 }
 
-function placeOrder(form){
-    form.submit();
-    let form__select = document.getElementsByClassName('form__select-current');
-    for (let i = 0; i < form__select.length; i++) {
-        let x = form__select[i].innerText;
-        console.log(x)
+
+
+document.getElementById('contact__form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const array = [];
+    const form__selectCurrent = document.getElementsByClassName('form__select-current');
+    const form__select = document.getElementsByClassName('form__select');
+    for (let i = 0; i < form__selectCurrent.length; i++) {
+        form__select[i].classList.remove('border');
+        const selectItem = form__selectCurrent[i].innerText;
+        if(selectItem === 'Practice / Institution' || selectItem === 'Medical Profession' || selectItem === 'Type of Inquiry'){
+            form__select[i].classList.add('border');
+            break;
+        }
+        console.log(321)
+        array.push(selectItem);
+        console.log(array[i])
     }
-}
+
+})
