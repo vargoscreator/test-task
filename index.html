@@ -14,12 +14,12 @@
                 <div class="contact__left-form">
                     <div class="contact__title">Contact Us</div>
                     <div class="contact__descr">The Voodoo team is looking forward to hearing from you!</div>
-                    <form class="contact__form" action="#">
-                        <input class="form__full-name" type="text" placeholder="Full Name">
-                        <input class="form__title" type="text" placeholder="Title/Position">
+                    <form class="contact__form">
+                        <input class="form__full-name" type="text" placeholder="Full Name" required>
+                        <input class="form__title" type="text" placeholder="Title/Position" required>
                         <div class="form__select">
                             <div class="form__select-header">
-                                <span class="form__select-current">Practice / Institution</span>
+                                <span class="form__select-current" id='usdsel'>Practice / Institution</span>
                                 <div class="form__select-icon"></div>
                             </div>
                             <div class="form__select-body">
@@ -30,8 +30,8 @@
                                 <div class="form__select-item">Option 5</div>
                             </div>
                         </div>
-                        <input class="form__email" type="email" placeholder="Email Address">
-                        <input class="form__number" type="number" placeholder="Phone Number">
+                        <input class="form__email" type="email" placeholder="Email Address" required>
+                        <input class="form__number" type="number" placeholder="Phone Number" required>
                         <div class="form__select">
                             <div class="form__select-header">
                                 <span class="form__select-current">Medical Profession</span>
@@ -58,7 +58,7 @@
                                 <div class="form__select-item">Option 5</div>
                             </div>
                         </div>
-                        <textarea class="form__message" name="message" id="" cols="30" rows="10" placeholder="Enter Message*"></textarea>
+                        <textarea class="form__message" cols="30" rows="10" placeholder="Enter Message*" required></textarea>
                         
                         <input class="form__send" type="submit" value="Send Message">
                     </form>

@@ -86,3 +86,12 @@ marker.addListener("click", () => {
 });
     infoWindow.open(map, marker);
 }
+
+function placeOrder(form){
+    form.submit();
+    let form__select = document.getElementsByClassName('form__select-current');
+    for (let i = 0; i < form__select.length; i++) {
+        let x = form__select[i].innerText;
+        console.log(x)
+    }
+}
