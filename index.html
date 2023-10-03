@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>ЩО ТАКЕ АЙТІ І ЧИ ЗМОЖУ Я СТАТИ ПРОГРАМІСТОМ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body">
+    <header class="header" id="header"> 
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__menu-logo">
+                    <div class="header__menu-image">
+                        <a href="index.html" class="text-accent-1">
+                            stvdv<span class="logo-part">/jsbasics</span>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="118" height="29" viewBox="0 0 118 29" fill="none">
+                                <path d="M8.01429 0.688283H11.0142V9.66315C11.0142 11.797 9.80985 13.6589 8.01429 14.684C7.09462 15.2071 6.02167 15.4999 4.88303 15.4999C3.74438 15.4999 2.67143 15.2071 1.75175 14.684C1.07295 14.2866 0.459836 13.7845 0 13.1778C0 13.1569 0 13.1569 0 13.1569L2.1459 11.1067C2.67143 12.0272 3.70059 12.6548 4.88303 12.6548C6.61289 12.6548 8.01429 11.3159 8.01429 9.66315V0.688283Z" fill="#FF9E66"/>
+                                <path d="M21.8442 7.63387C26.2892 9.76775 24.6688 15.5209 18.7348 15.4999C16.6545 15.4999 14.2897 14.4539 12.8007 12.7175L15.0999 10.7928C16.545 12.3828 18.253 12.7594 19.4574 12.6548C21.3187 12.4874 21.866 10.8347 19.742 9.91419L16.6327 8.57528C14.3115 7.67571 12.954 6.04391 13.3919 4.05647C13.9174 1.6297 16.348 0.5 18.6472 0.5C20.9902 0.5 22.9609 1.56694 24.2309 2.94769L21.9317 4.87237C21.4719 4.3912 20.9902 3.99371 20.5084 3.72175C17.8808 2.21547 15.0999 4.22383 17.2239 5.5209C18.1873 6.12759 20.6398 7.06901 21.8442 7.63387Z" fill="#FF9E66"/>
+                                <path d="M40.9592 12.843C42.3168 12.843 43.5431 12.32 44.4408 11.4623L46.6306 13.387C45.6015 14.433 44.2438 15.1861 42.711 15.4999C42.1417 15.6255 41.5723 15.6882 40.9592 15.6882C40.3681 15.6882 39.7768 15.6255 39.2294 15.4999C35.7259 14.7468 33.1202 11.7552 33.1202 8.17779C33.1202 4.62132 35.7259 1.6297 39.2294 0.876565C39.7768 0.751043 40.3681 0.688283 40.9592 0.688283C41.5723 0.688283 42.1417 0.751043 42.711 0.855645C44.2438 1.19037 45.6015 1.94351 46.6306 2.98953L44.4408 4.91421C43.5431 4.05647 42.3168 3.53346 40.9592 3.53346C38.2659 3.53346 36.0982 5.6255 36.0982 8.17779C36.0982 10.751 38.2659 12.843 40.9592 12.843Z" fill="white"/>
+                                <path d="M56.8267 0.876565C60.3302 1.6297 62.9359 4.62132 62.9359 8.17779C62.9359 11.7552 60.3302 14.7468 56.8267 15.4999C56.2793 15.6255 55.688 15.6882 55.0969 15.6882H55.053C54.4618 15.6882 53.8925 15.6255 53.345 15.4999C49.8415 14.7468 47.2359 11.7552 47.2359 8.17779C47.2359 4.62132 49.8415 1.6297 53.345 0.876565C53.8925 0.751043 54.4838 0.688283 55.0749 0.688283C55.688 0.688283 56.2574 0.751043 56.8267 0.876565ZM55.0749 12.843C57.7683 12.843 59.9579 10.751 59.9579 8.17779C59.9579 5.6255 57.7683 3.53346 55.0749 3.53346C52.3816 3.53346 50.2138 5.6255 50.2138 8.17779C50.2138 10.751 52.3816 12.843 55.0749 12.843Z" fill="white"/>
+                                <path d="M74.0889 0.855645H77.0888V9.85143C77.0888 11.9853 75.8844 13.8472 74.0889 14.8723C73.1693 15.3953 72.0963 15.6882 70.9576 15.6882C69.819 15.6882 68.746 15.3953 67.8264 14.8723C66.0308 13.8472 64.8484 11.9853 64.8484 9.85143V0.855645H67.8264V9.85143C67.8264 11.5041 69.2278 12.843 70.9576 12.843C72.6875 12.843 74.0889 11.5041 74.0889 9.85143V0.855645Z" fill="white"/>
+                                <path d="M91.6082 14.9351L91.9585 15.4999H88.4769L88.1266 14.9351L84.9734 9.87235H82.6742V15.4999H79.6962V0.855645H87.1193C89.725 0.855645 91.849 2.88493 91.849 5.37446C91.849 7.44558 90.3601 9.2029 88.3455 9.70499L91.6082 14.9351ZM87.1193 7.00625C88.0828 7.00625 88.8491 6.27404 88.8491 5.37446C88.8491 4.47488 88.0828 3.72174 87.1193 3.72174H82.6742V7.00625H87.1193Z" fill="white"/>
+                                <path d="M102.323 7.82215C106.768 9.95603 105.148 15.7091 99.2138 15.6882C97.1336 15.6882 94.7687 14.6422 93.2797 12.9058L95.579 10.9811C97.0241 12.5711 98.7321 12.9477 99.9365 12.843C101.797 12.6757 102.345 11.023 100.222 10.1025L97.1117 8.76357C94.7906 7.86399 93.4331 6.23219 93.871 4.24475C94.3965 1.81798 96.8271 0.688283 99.1262 0.688283C101.469 0.688283 103.44 1.75522 104.71 3.13597L102.41 5.06065C101.951 4.57948 101.469 4.18199 100.987 3.91003C98.3598 2.40376 95.579 4.41212 97.703 5.70918C98.6664 6.31588 101.119 7.2573 102.323 7.82215Z" fill="white"/>
+                                <path d="M118 3.72174H110.008V6.75521H117.014V9.6213H110.008V12.6548H118V15.4999H107.029V0.876565H118V3.72174Z" fill="white"/>
+                                <path d="M10.7401 23.5664V28.4195H10.0364V23.5664H10.7401Z" fill="#BFB1FF"/>
+                                <path d="M11.7043 24.1967V23.5664H15.3139V24.1967H13.8586V28.4195H13.1573V24.1967H11.7043Z" fill="#BFB1FF"/>
+                                <path d="M18.1475 28.4195V23.5664H21.0716V24.1967H18.8511V25.6754H20.9189V26.3033H18.8511V27.7891H21.0989V28.4195H18.1475Z" fill="#BFB1FF"/>
+                                <path d="M23.6908 28.4195H22.1809V23.5664H23.7385C24.1956 23.5664 24.588 23.6635 24.916 23.8578C25.2439 24.0506 25.4952 24.3278 25.6697 24.6896C25.8459 25.0498 25.9339 25.4819 25.9339 25.9858C25.9339 26.4913 25.8451 26.9258 25.6675 27.2891C25.4914 27.6525 25.2363 27.9321 24.9023 28.128C24.5682 28.3223 24.1645 28.4195 23.6908 28.4195ZM22.8845 27.7797H23.652C24.0073 27.7797 24.3026 27.7101 24.5379 27.5711C24.7733 27.4305 24.9493 27.2275 25.0663 26.9621C25.1832 26.6951 25.2416 26.3697 25.2416 25.9858C25.2416 25.6051 25.1832 25.282 25.0663 25.0166C24.9509 24.7512 24.7786 24.5498 24.5493 24.4123C24.32 24.2749 24.0354 24.2062 23.6953 24.2062H22.8845V27.7797Z" fill="#BFB1FF"/>
+                                <path d="M29.9777 23.5664H30.6836V26.7583C30.6836 27.098 30.607 27.3989 30.4536 27.6612C30.3002 27.9218 30.0847 28.1272 29.8069 28.2773C29.529 28.4258 29.2034 28.5 28.8299 28.5C28.4579 28.5 28.133 28.4258 27.8552 28.2773C27.5774 28.1272 27.3618 27.9218 27.2084 27.6612C27.0551 27.3989 26.9784 27.098 26.9784 26.7583V23.5664H27.682V26.6991C27.682 26.9187 27.7284 27.1138 27.821 27.2844C27.9151 27.455 28.048 27.5893 28.2195 27.6872C28.3911 27.7836 28.5946 27.8318 28.8299 27.8318C29.0667 27.8318 29.2709 27.7836 29.4424 27.6872C29.6156 27.5893 29.7476 27.455 29.8388 27.2844C29.9313 27.1138 29.9777 26.9187 29.9777 26.6991V23.5664Z" fill="#BFB1FF"/>
+                                <path d="M35.7498 25.1446H35.0393C35.012 24.9866 34.9612 24.8476 34.8868 24.7275C34.8123 24.6074 34.7213 24.5055 34.6135 24.4218C34.5057 24.3381 34.385 24.2749 34.2514 24.2322C34.1193 24.1896 33.9788 24.1683 33.83 24.1683C33.5613 24.1683 33.3207 24.2386 33.1081 24.3792C32.8971 24.5198 32.7301 24.7259 32.6071 24.9976C32.4857 25.2694 32.4249 25.6011 32.4249 25.9929C32.4249 26.3879 32.4857 26.7212 32.6071 26.9929C32.7301 27.2646 32.8979 27.47 33.1104 27.609C33.3229 27.7481 33.5621 27.8176 33.8277 27.8176C33.9751 27.8176 34.1147 27.797 34.2468 27.756C34.3804 27.7133 34.5011 27.6509 34.6089 27.5688C34.7167 27.4866 34.8078 27.3863 34.8822 27.2678C34.958 27.1477 35.0104 27.0103 35.0393 26.8555L35.7498 26.8579C35.7119 27.0964 35.6382 27.316 35.5289 27.5166C35.4211 27.7157 35.2822 27.8879 35.1122 28.0332C34.9437 28.177 34.7509 28.2884 34.5337 28.3673C34.3166 28.4463 34.0798 28.4858 33.8232 28.4858C33.4194 28.4858 33.0596 28.3863 32.7437 28.1872C32.428 27.9866 32.179 27.6999 31.9968 27.327C31.8161 26.9542 31.7258 26.5095 31.7258 25.9929C31.7258 25.4747 31.8168 25.03 31.9991 24.6588C32.1813 24.2859 32.4303 24 32.746 23.801C33.0619 23.6003 33.4209 23.5 33.8232 23.5C34.0707 23.5 34.3015 23.5371 34.5155 23.6114C34.7311 23.684 34.9247 23.7915 35.0962 23.9337C35.2678 24.0743 35.4098 24.2465 35.5221 24.4502C35.6345 24.6525 35.7104 24.8839 35.7498 25.1446Z" fill="#BFB1FF"/>
+                                <path d="M37.1239 28.4195H36.377L38.0554 23.5664H38.8683L40.5468 28.4195H39.7998L38.4812 24.4479H38.4448L37.1239 28.4195ZM37.2491 26.519H39.6722V27.1351H37.2491V26.519Z" fill="#BFB1FF"/>
+                                <path d="M40.6085 24.1967V23.5664H44.2181V24.1967H42.763V28.4195H42.0615V24.1967H40.6085Z" fill="#BFB1FF"/>
+                                <path d="M45.8888 23.5664V28.4195H45.1851V23.5664H45.8888Z" fill="#BFB1FF"/>
+                                <path d="M51.1344 25.9929C51.1344 26.5111 51.0433 26.9566 50.8611 27.3294C50.679 27.7007 50.4292 27.9866 50.1119 28.1872C49.7961 28.3863 49.4371 28.4858 49.0347 28.4858C48.6308 28.4858 48.2702 28.3863 47.953 28.1872C47.6371 27.9866 47.3881 27.6999 47.206 27.327C47.0238 26.9542 46.9327 26.5095 46.9327 25.9929C46.9327 25.4747 47.0238 25.03 47.206 24.6588C47.3881 24.2859 47.6371 24 47.953 23.801C48.2702 23.6003 48.6308 23.5 49.0347 23.5C49.4371 23.5 49.7961 23.6003 50.1119 23.801C50.4292 24 50.679 24.2859 50.8611 24.6588C51.0433 25.03 51.1344 25.4747 51.1344 25.9929ZM50.4375 25.9929C50.4375 25.598 50.3761 25.2654 50.253 24.9953C50.1316 24.7235 49.9646 24.5182 49.752 24.3792C49.541 24.2386 49.3019 24.1683 49.0347 24.1683C48.7659 24.1683 48.5261 24.2386 48.3151 24.3792C48.104 24.5182 47.937 24.7235 47.8141 24.9953C47.6925 25.2654 47.6318 25.598 47.6318 25.9929C47.6318 26.3879 47.6925 26.7212 47.8141 26.9929C47.937 27.2631 48.104 27.4684 48.3151 27.609C48.5261 27.7481 48.7659 27.8176 49.0347 27.8176C49.3019 27.8176 49.541 27.7481 49.752 27.609C49.9646 27.4684 50.1316 27.2631 50.253 26.9929C50.3761 26.7212 50.4375 26.3879 50.4375 25.9929Z" fill="#BFB1FF"/>
+                                <path d="M55.9456 23.5664V28.4195H55.2988L52.9281 24.8602H52.8848V28.4195H52.1811V23.5664H52.8325L55.2054 27.1304H55.2488V23.5664H55.9456Z" fill="#BFB1FF"/>
+                                <path d="M59.008 28.4195V23.5664H61.9003V24.1967H59.7117V25.6754H61.693V26.3033H59.7117V28.4195H59.008Z" fill="#BFB1FF"/>
+                                <path d="M66.9864 25.9929C66.9864 26.5111 66.8953 26.9566 66.7131 27.3294C66.5309 27.7007 66.2812 27.9866 65.9638 28.1872C65.6481 28.3863 65.289 28.4858 64.8867 28.4858C64.4829 28.4858 64.1222 28.3863 63.805 28.1872C63.4891 27.9866 63.2401 27.6999 63.058 27.327C62.8758 26.9542 62.7847 26.5095 62.7847 25.9929C62.7847 25.4747 62.8758 25.03 63.058 24.6588C63.2401 24.2859 63.4891 24 63.805 23.801C64.1222 23.6003 64.4829 23.5 64.8867 23.5C65.289 23.5 65.6481 23.6003 65.9638 23.801C66.2812 24 66.5309 24.2859 66.7131 24.6588C66.8953 25.03 66.9864 25.4747 66.9864 25.9929ZM66.2895 25.9929C66.2895 25.598 66.2281 25.2654 66.105 24.9953C65.9836 24.7235 65.8166 24.5182 65.604 24.3792C65.3931 24.2386 65.1539 24.1683 64.8867 24.1683C64.6179 24.1683 64.3781 24.2386 64.167 24.3792C63.956 24.5182 63.789 24.7235 63.666 24.9953C63.5445 25.2654 63.4838 25.598 63.4838 25.9929C63.4838 26.3879 63.5445 26.7212 63.666 26.9929C63.789 27.2631 63.956 27.4684 64.167 27.609C64.3781 27.7481 64.6179 27.8176 64.8867 27.8176C65.1539 27.8176 65.3931 27.7481 65.604 27.609C65.8166 27.4684 65.9836 27.2631 66.105 26.9929C66.2281 26.7212 66.2895 26.3879 66.2895 25.9929Z" fill="#BFB1FF"/>
+                                <path d="M68.0331 28.4195V23.5664H69.6956C70.0569 23.5664 70.3568 23.6311 70.5951 23.7607C70.835 23.8902 71.0141 24.0695 71.1326 24.2986C71.251 24.5261 71.3102 24.7891 71.3102 25.0877C71.3102 25.3847 71.2502 25.6461 71.1303 25.8721C71.0118 26.0964 70.8327 26.271 70.5928 26.3958C70.3544 26.5206 70.0547 26.583 69.6933 26.583H68.4339V25.9526H69.6295C69.8573 25.9526 70.0425 25.9187 70.1852 25.8507C70.3295 25.7828 70.4349 25.6841 70.5018 25.5545C70.5685 25.425 70.6019 25.2694 70.6019 25.0877C70.6019 24.9044 70.5678 24.7457 70.4995 24.6114C70.4326 24.4771 70.3272 24.3744 70.1829 24.3033C70.0402 24.2307 69.8527 24.1943 69.6204 24.1943H68.7368V28.4195H68.0331ZM70.3355 26.2299L71.4879 28.4195H70.6863L69.5567 26.2299H70.3355Z" fill="#BFB1FF"/>
+                                <path d="M74.2024 28.4195V23.5664H77.1265V24.1967H74.9062V25.6754H76.974V26.3033H74.9062V27.7891H77.1538V28.4195H74.2024Z" fill="#BFB1FF"/>
+                                <path d="M78.6435 23.5664L79.9416 27.519H79.994L81.292 23.5664H82.0527L80.3743 28.4195H79.5613L77.8829 23.5664H78.6435Z" fill="#BFB1FF"/>
+                                <path d="M82.8955 28.4195V23.5664H85.8197V24.1967H83.5993V25.6754H85.6671V26.3033H83.5993V27.7891H85.8471V28.4195H82.8955Z" fill="#BFB1FF"/>
+                                <path d="M86.9291 28.4195V23.5664H88.5915C88.9528 23.5664 89.2527 23.6311 89.4911 23.7607C89.7309 23.8902 89.9101 24.0695 90.0285 24.2986C90.147 24.5261 90.2062 24.7891 90.2062 25.0877C90.2062 25.3847 90.1461 25.6461 90.0262 25.8721C89.9078 26.0964 89.7286 26.271 89.4888 26.3958C89.2504 26.5206 88.9505 26.583 88.5892 26.583H87.3298V25.9526H88.5255C88.7532 25.9526 88.9384 25.9187 89.0811 25.8507C89.2253 25.7828 89.3309 25.6841 89.3976 25.5545C89.4645 25.425 89.4979 25.2694 89.4979 25.0877C89.4979 24.9044 89.4637 24.7457 89.3954 24.6114C89.3286 24.4771 89.2231 24.3744 89.0789 24.3033C88.9362 24.2307 88.7486 24.1943 88.5163 24.1943H87.6327V28.4195H86.9291ZM89.2314 26.2299L90.3838 28.4195H89.5821L88.4526 26.2299H89.2314Z" fill="#BFB1FF"/>
+                                <path d="M90.7029 23.5664H91.5023L92.7206 25.7725H92.7707L93.9891 23.5664H94.7884L93.0964 26.5142V28.4195H92.3949V26.5142L90.7029 23.5664Z" fill="#BFB1FF"/>
+                                <path d="M99.4357 25.9929C99.4357 26.5111 99.3445 26.9566 99.1624 27.3294C98.9802 27.7007 98.7304 27.9866 98.413 28.1872C98.0973 28.3863 97.7382 28.4858 97.3359 28.4858C96.9321 28.4858 96.5715 28.3863 96.2542 28.1872C95.9384 27.9866 95.6894 27.6999 95.5072 27.327C95.325 26.9542 95.2339 26.5095 95.2339 25.9929C95.2339 25.4747 95.325 25.03 95.5072 24.6588C95.6894 24.2859 95.9384 24 96.2542 23.801C96.5715 23.6003 96.9321 23.5 97.3359 23.5C97.7382 23.5 98.0973 23.6003 98.413 23.801C98.7304 24 98.9802 24.2859 99.1624 24.6588C99.3445 25.03 99.4357 25.4747 99.4357 25.9929ZM98.7387 25.9929C98.7387 25.598 98.6773 25.2654 98.5543 24.9953C98.4328 24.7235 98.2658 24.5182 98.0532 24.3792C97.8423 24.2386 97.6031 24.1683 97.3359 24.1683C97.0672 24.1683 96.8273 24.2386 96.6162 24.3792C96.4053 24.5182 96.2383 24.7235 96.1153 24.9953C95.9938 25.2654 95.933 25.598 95.933 25.9929C95.933 26.3879 95.9938 26.7212 96.1153 26.9929C96.2383 27.2631 96.4053 27.4684 96.6162 27.609C96.8273 27.7481 97.0672 27.8176 97.3359 27.8176C97.6031 27.8176 97.8423 27.7481 98.0532 27.609C98.2658 27.4684 98.4328 27.2631 98.5543 26.9929C98.6773 26.7212 98.7387 26.3879 98.7387 25.9929Z" fill="#BFB1FF"/>
+                                <path d="M104.247 23.5664V28.4195H103.6L101.229 24.8602H101.186V28.4195H100.482V23.5664H101.134L103.506 27.1304H103.55V23.5664H104.247Z" fill="#BFB1FF"/>
+                                <path d="M105.442 28.4195V23.5664H108.367V24.1967H106.146V25.6754H108.215V26.3033H106.146V27.7891H108.394V28.4195H105.442Z" fill="#BFB1FF"/>
+                            </svg> -->
+                        </a>
+                    </div>
+                </div>
+                <div class="header__menu">
+                    <div class="header__menu-item">
+                        <a class="header__link" href="#about">Про курс</a>
+                    </div>
+                    <div class="header__menu-item">
+                        <a class="header__link" href="#program">Програма</a>
+                    </div>
+                    <div class="header__menu-item">
+                        <a class="header__link" href="#community">Ком’юніті</a>
+                    </div>
+                    <div class="header__menu-item">
+                        <a class="header__link" href="#tariffs">Вартість</a>
+                    </div>
+                    <div class="header__menu-item">
+                        <a class="header__link" href="#reviews">Відгуки</a>
+                    </div>
+                    <div class="header__btn">
+                        <a class="header__btn-link" href="#reserve">Записатись</a>
+                    </div>
+                </div>
+                <div class="header__btn">
+                    <a class="header__btn-link" href="#reserve">Записатись</a>
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+            </div>                   
+        </div>
+    </header>
+    <div class="header__overlay"></div>
+
+    <section class="main">
+        <div class="container">
+            <div class="main__inner">
+                <div class="main__block">
+                    <h1 class="main__title title">
+                        Не програміст, але цікавить програмування?<br>
+                        Цей курс <span class="text-gradient">саме для вас!</span>
+                    </h1>
+
+                    <p class="main__descr">
+                        <span class="text-accent-1">Збережіть час та гроші</span> - перевірте, чи варто вам занурюватись повністю у програмування.
+                    </p>
+
+                    <p class="main__sub-descr text-accent-2">
+                        <span class="">* Діє знижка 72% на усі тарифи</span>
+                    </p>
+
+                    <div class="flex gap26 md-gap10">
+                        <a class="btn btn-action" href="#reserve">ХОЧУ!</a>
+                        <a class="btn border-gradient" href="#about">Детальніше</a>
+                    </div>
+                </div>
+                <div class="main__block">
+                    <div class="main__item">
+                        <p class="main__item-name">менторство</p>
+                        <p class="main__item-name">підтримка</p>
+                        <p class="main__item-name">об’єднання</p>
+                        <p class="main__item-name">реалізація</p>
+                    </div>
+
+                    <a class="main__item" href="#community">
+                        <div class="main__item-content">
+                            <p class="main__item-title">Власне ком’юніті</p>
+                            <p class="main__item-descr">Простір, в якому зможеш швидко зростати</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                <path d="M15.9481 16.6845L17.5957 2.20711M17.5957 2.20711L3.05208 1.31566M17.5957 2.20711L1.40452 15.7931" stroke="#171515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                    <a class="main__item" href="#youget">
+                        <div class="main__item-content">
+                            <p class="main__item-title">Стартап-проекти</p>
+                            <p class="main__item-descr">До розробки яких ти зможеш долучитися</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 19 18" fill="none">
+                                <path d="M15.9481 16.6845L17.5957 2.20711M17.5957 2.20711L3.05208 1.31566M17.5957 2.20711L1.40452 15.7931" stroke="#171515" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="format">
+        <div id="about"></div>
+        <div class="container">
+            <div class="format__inner">
+                <h2 class="format__title title">Який формат курсу?</h2>
+                <div class="format__block">
+                    <div class="format__item">
+                        <div class="format__item-image">
+                            <img class="format__img" src="img/format/1.webp" alt="">
+                        </div>
+                        <div class="format__item-content">
+                            <p class="format__item-num">01</p>
+                            <p class="format__item-name"><span class="text-accent-3">Структурована текстова інформація</span> у notion</p>
+                            <a class="format__item-link" href="#program"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                <path d="M11.1447 11.9271L12.2803 2.16773M12.2803 2.16773L2.47198 1.59129M12.2803 2.16773L1.33647 11.3507" stroke="#171515" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><p>Переглянути програму</p></a>
+                        </div>
+                    </div>
+                    <div class="format__item">
+                        <div class="format__item-image">
+                            <img class="format__img" src="img/format/2.webp" alt="">
+                        </div>
+                        <div class="format__item-content">
+                            <p class="format__item-num">02</p>
+                            <p class="format__item-name">Відкрита групова голосова live-сесія <span class="text-accent-3">де можна запитати будь-що і отримати відповідь</span></p>
+                            <a class="format__item-link" href="#program"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                <path d="M11.1447 11.9271L12.2803 2.16773M12.2803 2.16773L2.47198 1.59129M12.2803 2.16773L1.33647 11.3507" stroke="#171515" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><p>Переглянути програму</p></a>
+                        </div>
+                    </div>
+                    <div class="format__item">
+                        <div class="format__item-image">
+                            <p class="format__item-message"><span class="text-accent-3">Наше менторство</span> = твій <span class="text-accent-2">100% ріст та результат</span></p>
+                            <img class="format__img" src="img/format/3.webp" alt="">
+                        </div>
+                        <div class="format__item-content">
+                            <p class="format__item-num">03</p>
+                            <p class="format__item-name">Консультація-співбесіда, на якій ви зрозумієте свої зони росту і <span class="text-accent-3">зможете обрати те, що для вас буде найкращим вибором</span> серед усіх опцій в айті</p>
+                            <a class="format__item-link" href="#program"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13" fill="none">
+                                <path d="M11.1447 11.9271L12.2803 2.16773M12.2803 2.16773L2.47198 1.59129M12.2803 2.16773L1.33647 11.3507" stroke="#171515" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg><p>Переглянути програму</p></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="special">
+        <div class="container">
+            <div class="special__inner">
+                <h2 class="special__title title">Що в цьому <span class="text-accent-2">особливого і важливого?</span></h2>
+                <div class="special__block">
+                    <div class="special__item">
+                        <div class="special__image">
+                            <img class="special__img" src="img/special/special-1.webp" alt="">
+                        </div>
+
+                        <p class="special__descr">
+                            Дуже часто люди купують дорогі курси не розуміючи повної картини, а ті хто продають ці курси — не хочуть щоб ви злились. Тому інколи буває таке, що <span class="text-accent-1">в процесі ти розумієш що курс тобі не підходить.</span>
+                        </p>
+                    </div>
+                    <div class="special__item">
+                        <div class="special__image">
+                            <img class="special__img" src="img/special/special-2.webp" alt="">
+                        </div>
+                        <p class="special__descr">Мета цього продукту якраз в тому, щоб допомогти вам <span class="text-accent-1">повноцінно розібратись і зробити правильне рішення.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="attention">
+        <div class="container">
+            <div class="attention__inner">
+
+                <div class="attention__title-container">
+                    <h3 class="attention__title">До вашої уваги — </h3>
+                    <div class="scrolling-words-box">
+                      <ul>
+                        <li class="text-accent-1">текстова</li>
+                        <li class="text-accent-1">структурована</li>
+                        <li class="text-accent-1">актуальна</li>
+                        <li class="text-accent-1">текстова</li>
+                      </ul>
+                    </div>
+                </div>
+                <h3 class="attention__title">інформація про айті-всесвіт через призму програмування</h3>
+
+                <div class="attention__image">
+                    <video loop="" autoplay="" muted="" playsinline="">
+                        <source src="img/attention/attention.mov" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="whom">
+        <div class="container">
+            <div class="whom__inner">
+                <h2 class="whom__title title">Для кого підійде</h2>
+                <div class="whom__block">
+                    <div class="whom__item wi-color-2">
+                        <p class="whom__item-name"><span class="text-accent-3">Сумніваєшся</span> чи підійде тобі айті?</p>
+                    </div>
+                    <div class="whom__item wi-color-1">
+                        <p class="whom__item-name"><span class="text-accent-4">Сумніваєшся</span> чи підійде тобі програмування?</p>
+                    </div>
+                    <div class="whom__item wi-color-1">
+                        <p class="whom__item-name"><span class="text-accent-4">Сумніваєшся</span> чи вартують курси з програмування тих грошей?</p>
+                    </div>
+                    <div class="whom__item wi-color-2">
+                        <p class="whom__item-name"><span class="text-accent-3">Сумніваєшся</span> чи зможеш ти стати гарним програмістом?</p>
+                    </div>
+                    <div class="whom__item wi-color-3">
+                        <p class="whom__item-name item__name-w"><span class="text-accent-4">Сумніваєшся</span> чи варто лізти в айті на фоні шуміхи з штучним інтелектом?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="found">
+        <div class="container">
+            <div class="found__inner">
+                <p class="found__descr">Якщо знайшов себе у цих думках — ти тут не дарма! 
+                    Ми станемо тими, хто <span class="text-accent-2">допоможе тобі розібратись</span>
+                    <br>    і зробити правильне рішення.</p>
+                <a class="found__btn btn-action" href="#tariffs">Обрати свій тариф</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="program">
+        <div id="program"></div>
+        <div class="container">
+            <div class="program__inner">
+                <h2 class="program__title title">Яка програма курсу JS Basics</h2>
+                <div class="program__content">
+                    <div class="program__block">
+                        <div class="program__item">
+                            <p class="program__item-name">1. <span class="text-accent-3">Вступ</span></p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Thinking.webp" alt="icon">
+                                Програмування, що воно таке
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Pinched.webp" alt="icon">
+                                Психологічний Disclaimer!
+                            </p>
+                        </div>
+                        <div class="program__item">
+                            <p class="program__item-name">2. <span>Фундамент</span></p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Scroll.webp" alt="icon">
+                                Трошки історії
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Laptop.webp" alt="icon">
+                                Середовище виконання
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Information.webp" alt="icon">
+                                Синтаксис
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Package.webp" alt="icon">
+                                Scope - область видимості
+                            </p>
+                            
+                        </div>
+                        <div class="program__item">
+                            <p class="program__item-name">3. <span>Логіка</span></p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Warning.webp" alt="icon">
+                                Логічні оператори та умовні конструкції
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Repeat.webp" alt="icon">
+                                Function
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Recycling.webp" alt="icon">
+                                Цикли
+                            </p>
+                        </div>
+                        <div class="program__item">
+                            <p class="program__item-name">4. <span>Типи даних</span></p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Keyboard.webp" alt="icon">
+                                Типи
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Keyboard.webp" alt="icon">
+                                Основні типи даних та їх методи
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Keyboard.webp" alt="icon">
+                                Spread, Rest, Destruction
+                            </p>
+                        </div>
+                        <div class="program__item">
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Page.webp" alt="icon">
+                                Задача на закріплення знань №1
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Bookmark.webp" alt="icon">
+                                Задача на закріплення знань №2
+                            </p>
+                        </div>
+                    </div>
+                    <div class="program__block">
+                        <div class="program__item">
+                            <p class="program__item-name">5. <span>Структура даних</span></p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Thinking.webp" alt="icon">
+                                Class
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Thinking.webp" alt="icon">
+                                Map
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Thinking.webp" alt="icon">
+                                WeakMap
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Thinking.webp" alt="icon">
+                                Set
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Hourglass.webp" alt="icon">
+                                Date
+                            </p>                        
+
+                        </div>
+                        <div class="program__item">
+                            <p class="program__item-name">6. <span>Обробка помилок</span></p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Light.webp" alt="icon">
+                                Throw new error (“Ой, щось не так”)
+                            </p>
+                        </div>
+                        <div class="program__item">
+                            <p class="program__item-name">7. <span>Механізми та підходи</span></p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Telephone.webp" alt="icon">
+                                this та методи .call(), .apply(), .bind()
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Stopwatch.webp" alt="icon">
+                                setTimeout, setInterval
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Stopwatch.webp" alt="icon">
+                                Promise та async-await
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Gear.webp" alt="icon">
+                                Важливі механізми для роботи JS
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Beetle.webp" alt="icon">
+                                Особливості JS, незнання яких може призвести до багів
+                            </p>
+                        </div>
+                        <div class="program__item">
+                            <p class="program__item-name">8. <span>Комунікаційні аспекти</span></p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Pointing.webp" alt="icon">
+                                Різниця між серверним та браузерним JS
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Antenna.webp" alt="icon">
+                                Комунікація між фронтендом та бекендом
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Exclamation.webp" alt="icon">
+                                Часті помилки початківців</p>                        
+
+                        </div>
+                        <div class="program__item">
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Bulb.webp" alt="icon">
+                                Що варто вивчати далі
+                            </p>
+                            <p class="program__item-descr">
+                                <img class="proram__item-icon" src="img/program/Locked.webp" alt="icon">
+                                Надважлива опція для тих, хто пройшов співбесіду
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="youget">
+        <div id="youget"></div>
+        <div class="container">
+            <div class="youget__inner">
+                <h2 class="youget__title title">Яким буде результат</h2>
+                <div class="youget__block">
+                    <div class="youget__item">
+                        <div class="youget__image">
+                            <img class="youget__img" src="img/youget/Star.webp" alt="">
+                        </div>
+                        <p class="youget__descr">Зрозумієш <span class="text-accent-2">чи цікаво тобі програмування</span> насправді чи ні</p>
+                    </div>
+                    <div class="youget__item">
+                        <div class="youget__image">
+                            <img class="youget__img" src="img/youget/Puzzle.webp" alt="">
+                        </div>
+                        <p class="youget__descr">Зрозумієш що <span class="text-accent-2">між усіма мовами програмування є багато спільного</span>, і якщо знаєш базово одну мову — інші зрозуміти буде легше.</p>
+                    </div>
+                    <div class="youget__item">
+                        <div class="youget__image">
+                            <img class="youget__img" src="img/youget/Rocket.webp" alt="">
+                        </div>
+                        <p class="youget__descr">Зрозумієш <span class="text-accent-2">наскільки легко</span> тобі це дається</p>
+                    </div>
+                    <div class="youget__item">
+                        <div class="youget__image">
+                            <img class="youget__img" src="img/youget/Bulb.webp" alt="">
+                        </div>
+                        <p class="youget__descr"><span class="text-accent-2">Зрозумієш для себе що тобі підходить</span> — програмування, чи може все-таки дизайн або менеджмент?</p>
+                    </div>
+                    <div class="youget__item">
+                        <div class="youget__image">
+                            <img class="youget__img" src="img/youget/Technologist.webp" alt="">
+                        </div>
+                        <p class="youget__descr">При успішному проходженні співбесіди — <span class="text-accent-2">отримаєш доступ до United IT Hub</span></p>
+                    </div>
+                </div>
+                <a class="youget__btn btn-action" href="#reserve">Долучитися до курсу</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="community">
+        <div id="community"></div>
+        <div class="container">
+            <div class="community__inner">
+                <h2 class="community__title title">Про Ком’юніті</h2>
+                <div class="community__content">
+                    <div class="community__block">
+                        <p class="community__name">Проблеми, які це <span class="text-gradient-2">вирішує</span></p>
+                        <div class="community__item">
+                            <p class="community__descr"><span class="text-accent-1">Не маючи досвіду</span> важко зацікавити роботодавця.</p>
+                        </div>
+                        <div class="community__item">
+                            <p class="community__descr"><span class="text-accent-1">Не маючи гідного оточення</span> складно зростати над собою.</p>
+                        </div>
+                        <div class="community__item">
+                            <p class="community__descr"><span class="text-accent-1">Без фундаментального розуміння як реалізовуються проекти</span> складно на перших етапах роботи джуном.</p>
+                        </div>
+                    </div>
+                    <div class="community__block">
+                        <p class="community__name"><span class="text-gradient-2">Можливості,</span> які це надає</p>
+                        <div class="community__item">
+                            <p class="community__descr">Чудова можливість отримати практичний досвід, розширити свої знання під наглядом <span class="text-accent-2">менторів та розробників з великим досвідом.</span></p>
+                        </div>
+                        <div class="community__item">
+                            <p class="community__descr"><span class="text-accent-2">Простір, де люди об'єднуються</span> для спільної розробки проектів та створення нових продуктів.</p>
+                        </div>
+                        <div class="community__item">
+                            <p class="community__descr">Є можливість долучитись до проекту-стартапу, який буде створюватись під наглядом комьюніті і силами комьюніті, де кожен член команди має величезне значення, а тому має свою частку володіння у продукті над яким працює. 
+                                <br><span class="text-accent-2">Це дає велику перспективу отримання пасивного прибутку у майбутньому.</span></p>
+                        </div>
+                    </div>
+                </div>
+                <p class="community__end-descr">Об'єднуємось разом навколо цікавих ідей, щоб перетворювати їх на якісні продукти.</p>
+                <a class="community__btn" href="#reserve">Приєднатися до нас</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="tariffs">
+        <div id="tariffs"></div>
+        <div class="container">
+            <div class="tariffs__inner">
+                <h2 class="tariffs__title title">Тарифи</h2>
+                <div class="tariffs__block">
+                    <div class="tariffs__item">
+                        <div class="tariffs__item-content">
+                            <p class="tariffs__name">Basic</p>
+                            <p class="tariffs__new-price">500 грн</p>
+                            <p class="tariffs__old-price">750 грн</p>
+                            <div class="tariffs__conten">
+                                <p class="tariffs__descr">Тільки структурований матеріал</p>
+                            </div>
+                        </div>
+                        <div class="tariffs__btn">Придбати</div>
+                    </div>
+                    <div class="tariffs__item">
+                        <div class="tariffs__item-content">
+                            <p class="tariffs__name">Standard</p>
+                            <p class="tariffs__new-price">800 грн</p>
+                            <p class="tariffs__old-price">1200 грн</p>
+                            <div class="tariffs__conten">
+                                <p class="tariffs__descr">Структурований матеріал</p>
+                                <p class="tariffs__descr">Групові голосові live-сесії раз на тиждень протягом місяця</p>
+                            </div>
+                        </div>
+                        <div class="tariffs__btn">Придбати</div>
+                    </div>
+                    <div class="tariffs__item">
+                        <div class="tariffs__item-content">
+                            <p class="tariffs__name">Advanced</p>
+                            <p class="tariffs__new-price">1500 грн</p>
+                            <p class="tariffs__old-price">2250 грн</p>
+                            <div class="tariffs__conten">
+                                <p class="tariffs__descr">Структурований матеріал</p>
+                                <p class="tariffs__descr">Групові live-сесії </p>
+                                <p class="tariffs__descr">Індивідуальна співбесіда-консультація</p>
+                                <p class="tariffs__descr">Допуск до ком’юніті</p>
+                            </div>
+                        </div>
+                        <div class="tariffs__btn">Придбати</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="philosophy">
+        <div class="container">
+            <div class="philosophy__inner">
+                <h2 class="philosophy__title title">Наша філософія</h2>
+                <p class="philosophy__descr">Ми не агітуємо людей долучатись до айті, не кожному це підходить.</p>
+                <div class="philosophy__block">
+                    <div class="philosophy__item">
+                        <div class="philosophy__image">
+                            <img class="philosophy__img" src="img/philosophy/philosophy-1.webp" alt="">
+                        </div>
+                        <p class="philosophy__item-descr">Нам не подобається, що <span class="text-accent-1">усі намагаються впарити курси подорожче</span> і зовсім не зацікавлені в тому щоб люди були щасливими і задоволеними. </p>
+                    </div>
+                    <div class="philosophy__item">
+                        <div class="philosophy__image">
+                            <img class="philosophy__img" src="img/philosophy/philosophy-2.webp" alt="">
+                        </div>
+                        <p class="philosophy__item-descr"><span class="text-accent-1">Дуже частий кейс</span> - обрав курс, пройшло декілька тижнів, і ти зрозумів що тобі це не підходить, а повернути гроші вже не вийде, а коштувало це не дешево. </p>
+                    </div>
+                </div>
+                <p class="philosophy__end-descr">Це те, що ми хочемо змінити - <span class="text-accent-2">і ми змінюємо.</span></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reviews">
+        <div id="reviews"></div>
+        <div class="container">
+
+            <div class="reviews__inner">
+                <h2 class="reviews__title title">Відгуки</h2>
+                  
+                <div class="reviews__block">
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-name">Отримав більше, ніж за 3 місяці іншого платного курсу</p>
+                            <p class="reviews__item-descr">Відмінність JS Course від інших курсів - це їх реальне розуміння ЩО потрібно новачкам в ІТ в умовах перенасиченого ринку. Інформація, яку легко засвоювати та сильні ментори, які на зідзвонах дають максимум знань та підтримки. Коли виходиш з курсу і розумієш, що готовий до реальних кейсів, бо вже маєш досвід та знаєш куди і як рухатись.</p>                        
+                        </div>
+                        <div class="reviews__item-user">
+                            <div class="reviews__item-image">
+                                <img class="reviews__item-img" src="img/reviews/reviews-1.webp" alt="">
+                            </div>
+                            <p class="reviews__item-user--name">Андрій Григорʼєв</p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-name">Вже працюємо над проектом</p>
+                            <p class="reviews__item-descr">Круті ментори, сподобався підхід курсу до важливості практики та професійного комʼюніті, де можна швидко рости. Легко засвоїти нову інформацію, коли є практика на розробці реального продукту з сильною командою.</p>
+                        </div>
+                        <div class="reviews__item-user">
+                            <div class="reviews__item-image">
+                                <img class="reviews__item-img" src="img/reviews/reviews-2.webp" alt="">
+                            </div>
+                            <p class="reviews__item-user--name">Олексій Гладир</p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-name">Дуже вдячний менторам</p>
+                            <p class="reviews__item-descr">Курс Java Script допоміг мені визначити свій напрямок в ІТ, я зрозумів куди і як саме мені необхідно рухатись. Це бюджетний варіант для вивчення мови програмування, і програма курсу допомагає легко засвоювати матеріал. Вдячний менторам, які підтримували та допомагали на консультаціях.</p>
+                        </div>
+                        <div class="reviews__item-user">
+                            <div class="reviews__item-image">
+                                <img class="reviews__item-img" src="img/reviews/reviews-3.webp" alt="">
+                            </div>
+                            <p class="reviews__item-user--name">Артем Луць</p>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__item-content">
+                            <p class="reviews__item-name">Маю перших клієнтів</p>
+                            <p class="reviews__item-descr">Чесно кажучи, пройшовши багато популярних ІТ курсів різної вартості - я не очікувала, що привести мене до першого кліжнта зможе саме правильне менторство, де розвіялись мої страхи, а знання розклали по поличкам. Завдяки сувмісній роботі над продуктом з сильною командою - я з впевненістю беру нові і нові замовлення.</p>
+                        </div>
+                        <div class="reviews__item-user">
+                            <div class="reviews__item-image">
+                                <img class="reviews__item-img" src="img/reviews/reviews-4.webp" alt="">
+                            </div>
+                            <p class="reviews__item-user--name">Ольга Мазуренко </p>
+                        </div>
+                    </div>
+                </div>
+    
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="container">
+            <div class="faq__inner">
+                <h2 class="faq__title title">FAQ</h2>
+                <div class="faq__block">
+                    <div class="faq__item">
+                        <p class="faq__item-title">А чому так дешево?</p>
+                        <p class="faq__item-descr">
+                            Дійсно, це можна було б продавати і дорожче.<br>Але є декілька але, які для мене як для автора доволі важливі:
+                            <br><br>
+                            1. Я хочу щоб як можна більше людей зрозуміло що IT таке. Це важливо, особливо в часи війни, коли IT залишається однією з найбільш прибуткових індустрій для держави. Якщо після курсу у вас з’явиться бажання дати мені більше ніж заплатили — надішліть ці гроші до ЗСУ.
+                            <br><br>2. Це лише поверхневий курс в якому немає дедлайнів і лекцій, я витрачатиму свій час лише на те, щоб допомогти вам розібратись у питаннях які у вас виникли в процесі.
+                            <br><br>3. Мета цього проекту насамперед дати вам знання завдяки яким вам буде набагато легше вивчати програмування, бо, тоді коли я починав — мені не вистачало саме структурованої інформації про те що, як і для чого я маю використовувати, з прикладами коду. З можливістю спитати і почути конкретну і розгорнуту відповідь.
+                        </p>
+                    </div>
+                    <div class="faq__item">
+                        <p class="faq__item-title">Хто є автором курсу?</p>
+                        <p class="faq__item-descr">Автором курсу є команда наших досвідчених інструкторів і фахівців у галузі айті, які об'єднали свої знання та досвід, щоб створити найкращий навчальний матеріал для вас.</p>
+                    </div>
+                    <div class="faq__item">
+                        <p class="faq__item-title">Які люди входять в ком’юніті?</p>
+                        <p class="faq__item-descr">У ком'юніті можуть входити різні люди, такі як програмісти, розробники веб-сайтів, адміністратори систем, аналітики даних, проектні менеджери, інженери програмного забезпечення і багато інших, які цікавляться айті-галуззю і спільно діляться знаннями та досвідом у цьому напрямку.</p>
+                    </div>
+                    <div class="faq__item">
+                        <p class="faq__item-title">Я оплатив! Що далі?</p>
+                        <p class="faq__item-descr">Вітаємо з покупкою курсу! Після оплати вам на вказану вами електронну адресу має бути надіслано підтвердження оплати та інструкції щодо подальших дій.</p>
+                    </div>
+                    <div class="faq__item">
+                        <p class="faq__item-title">У мене є досвід програмування, чи можу я потрапити до ком’юніті?</p>
+                        <p class="faq__item-descr">Звісно, що так! Мати досвід програмування - це велика перевага при вступі до айті ком'юніті. Багато айті ком'юніті вітають у своїх рядах будь-яких людей, які цікавляться айті і мають різні рівні досвіду. Ваш досвід може бути корисним як для вас, так і для інших членів ком'юніті, і ви можете долучитися до обміну знаннями, допомагати іншим та розвивати свої власні навички.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="havequestions">
+        <div class="container">
+            <div class="havequestions__inner">
+                <p class="havequestions__descr">Залишилися питання?<br>Натискай, та задавай питання нашому менеджеру, який допоможе тобі з усіма питаннями <img src="img/havequestions/Ok.webp" alt=""></p>
+                <a class="havequestions__link" href="#reserve">Задати питання</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="reserve">
+        <div id="reserve"></div>
+        <div class="container">
+            <div class="reserve__inner">
+                <h2 class="reserve__title title">Долучитись до курсу</h2>
+                
+                <p class="reserve__descr">
+                    Спробуй себе в Айті, опанувавши базу JavaScript та зрозумівши як працює веб-розробка! Тиць сюди, щоб ми написали в телеграм і, не дай боже, не подзвонили
+                </p>
+
+                <p class="reserve__tariff-title">Обери тариф, що цікавить:</p>
+                <div class="reserve__tariff">
+                    <div class="reserve__item"><p class="reserve__item-name">Basic</p></div>
+                    <div class="reserve__item"><p class="reserve__item-name">Standart</p></div>
+                    <div class="reserve__item"><p class="reserve__item-name">Advanced</p></div>
+                </div>
+                <form class="reserve__from" id="myForm" action="#">
+                    <div class="reserve__from-table">
+                        <span>
+                            <input type="text" name="text" id="name" placeholder="Ваше імʼя">
+                            <span class="reserve__from-bg"></span>
+                        </span>
+                    </div>
+                    <div class="reserve__from-table">
+                        <span>
+                            <input type="text" name="email" id="text" placeholder="Ваш email">
+                            <span class="reserve__from-bg"></span>
+                        </span>
+                        <span class="reserve__from-email">Ви ввели некоректний email</span>
+                    </div>
+                    <div class="reserve__from-table">
+                        <span>
+                            <input type="text" id="phone" name="tel" maxlength="20" autocomplete="off" size="40" placeholder="Ваш номер телефону">
+                            <span class="reserve__from-bg"></span>
+                        </span>
+                        <span class="reserve__from-phone">Ви ввели некоректний номер телефону</span>
+                    </div>
+                    <button type="submit">Записатися на курс</button>
+                </form>
+                <p class="reserve__consent">Реєструючись та натискаючи кнопку «Записатися на курс», ви погоджуєтесь з умовами <a href="#">публічної оферти</a> та <a href="#">політикою конфиденційності.</a></p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="popup">
+        <div class="container">
+            <div class="popup__inner">
+                <span class="popup__close">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                        <path d="M23.5289 2L1.98438 25.2122" stroke="#979797" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                        <path d="M1.98438 2L23.9844 24" stroke="#979797" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    </svg>
+                </span>
+                <h2 class="popup__name">Ви вже майже з нами!</h2>
+                <p class="popup__whatis">Що вас чекає, приєднавшись до курсу:</p>
+                <ol class="popup__descr">
+                    <li class="popup__descr-name"><span class="text-accent-4">Практичні навички:</span> Ми надаємо практичний досвід роботи з Java Script, який ви зможете застосовувати в реальних проектах та стартапах.</li>
+                    <li class="popup__descr-name"><span class="text-accent-4">Ком'юніті:</span> Станьте частиною нашого активного ком'юніті програмістів. Обмінюйтеся досвідом, знаходьте друзів і можливих партнерів.</li>
+                    <li class="popup__descr-name"><span class="text-accent-4">Менторство:</span> Отримайте можливість консультуватися з досвідченими менторами, які допоможуть вам вирішувати завдання та рости як професіонал.</li>
+                    <li class="popup__descr-name"><span class="text-accent-4">Співпраця зі стартапами:</span> Ми співпрацюємо з перспективними стартапами, що дає вам можливість впроваджувати ваші навички в життя та розвивати справжні проекти.</li>
+                </ol>
+                <p class="popup__sub-descr">Приєднуйтесь до нашого курсу та почніть свій шлях до успішної кар'єри в програмуванні прямо зараз!</p>
+                <a class="popup__btn" href="#reserve">Перейти до оплати</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="cookie active">
+        <div class="container">
+            <div class="cookie__inner">
+                <span class="cookie__close"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="27" viewBox="0 0 26 27" fill="none">
+                    <path d="M23.5445 2L2 25.2122" stroke="#979797" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                    <path d="M2 2L24 24" stroke="#979797" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+                <div class="cookie__images">
+                    <img class="cookies__img" src="img/cookie/cookie.webp" alt="">
+                </div>
+                <h2 class="cookie__title">Our website uses cookies</h1>
+                <p class="cookie__descr">Our website use cookies. By continuing, we assume your permission to deploy cookies as detailed in our <span>Privacy Policy</span>.</p>
+                <p class="cookie__accept">Accept cookies</p>
+                <p class="cookie__decline">Decline cookies</p>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="footer__item" href="#">Політика конфіденційності</a>
+                <a class="footer__item" href="#">Cookie Policy</a>
+                <a class="footer__item" href="#">Умови надання послуг</a>
+                <a class="footer__item" href="mailtscourse@gmail.com">infojscourse@gmail.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/imask"></script>
+    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
